@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="users" version="1.0" profile="User" homePage="fetch" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+        <displayName>Bonita Users example</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_FetchData" token="fetch"/>
+            <applicationPage customPage="custompage_DefaultBonitaUserPage" token="default"/>
+            <applicationPage customPage="custompage_BonitaUserSelectPage" token="select"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="fetch">
+                <displayName>Fetch Data</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="default">
+                <displayName>Default Business Object</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="select">
+                <displayName>Select Business Object</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

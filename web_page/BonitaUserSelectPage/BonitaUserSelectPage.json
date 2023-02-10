@@ -1,0 +1,173 @@
+{
+  "modelVersion" : "2.3",
+  "id" : "BonitaUserSelectPage",
+  "name" : "BonitaUserSelectPage",
+  "lastUpdate" : 1676020347376,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "disabled" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Users"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "placeholder" : {
+            "type" : "interpolation",
+            "value" : "Select an option"
+          },
+          "availableValues" : {
+            "type" : "expression",
+            "value" : "users"
+          },
+          "displayedKey" : {
+            "type" : "constant",
+            "value" : "username"
+          },
+          "returnedKey" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "selectedUser"
+          }
+        },
+        "reference" : "a5a5b278-470e-4aa4-af50-064e52a39764",
+        "hasValidationError" : false,
+        "id" : "pbSelect"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Selected user is {{selectedUser|json}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "ce25c88c-879d-41b7-869a-8ef6312c3fad",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "7a8c3dc5-f11b-4357-98de-fa648679023a",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "96410cc8-8503-4a07-9016-7dcf31504869",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "users" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [org.bonita.example.model.BonitaUser]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"org.bonita.example.model.BonitaUser\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"{{ maxUser }}\"}}"
+      ],
+      "exposed" : false
+    },
+    "maxUser" : {
+      "type" : "constant",
+      "value" : [
+        "50"
+      ],
+      "exposed" : false
+    },
+    "selectedUser" : {
+      "type" : "constant",
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "e05b244a-0e83-4ad7-8b01-89d34b4bd364",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}
