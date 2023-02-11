@@ -1,0 +1,16 @@
+= Database to UID example
+
+This example aims at demonstrating how to fetch some data from an external database using the Database connector and using it an UID page or forms.
+In this example, we choose to duplicate the data in the BDM, but other approaches are possible.
+
+== Running the example
+
+* Clone this repository in a 2022.2 or greater Bonita Studio.
+* Configure the `Fetch Data` process:
+** Employee actor mapped to `/acme` group.
+** `bonita_h2_db_path`: Point to an absolute local file path of the h2 embedded db used for this example which is the `bonita_users` file located in the attachments folder of this project. _e.g._: `/home/romain/BonitaStudioCommunity-2022.2-u0/workspace/database-to-uid-example/attachments/bonita_users`
+* Deploy the project
+* Open the BonitaUsers demo app:
+** The home page is a UID page used to start the `Fetch Data` process
+** The `Default Business Object` is an example page of the generated widget when drag'n'dropping a Business Object from the palette in the UID.
+** The `Select Business Object` is an example page with a Select widget listing the values of a business data query.

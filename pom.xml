@@ -5,7 +5,7 @@
   <groupId>org.bonitasoft.example</groupId>
   <artifactId>database-to-uid</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <name>Database To UID</name>
+  <name>database-to-uid-example</name>
   <description>An example project on how to fetch data from a Database in a process and display it in a UID page.</description>
   <properties>
     <bonita.runtime.version>7.15.0</bonita.runtime.version>
